@@ -2,7 +2,7 @@
 //  ArchiverModel.swift
 //  JXAutoEncoder
 //
-//  Created by gxcb on 2017/2/9.
+//  Created by jx on 2017/2/9.
 //  Copyright © 2017年 jx. All rights reserved.
 //
 
@@ -12,11 +12,11 @@ class ArchiverModel: JXAutoEncoder {
     
     var bool = true
     var int = 1
-    var double = 3.14159
+    var double = M_PI
     var string = ""
     var array = ["123", "456"]
     var dictionary = ["abc": "cba"]
-    var data = Data(base64Encoded: "hello world")
+    var data = "hello world".data(using: String.Encoding.utf8)
     var date = Date()
     
     
@@ -31,8 +31,8 @@ class ArchiverModel: JXAutoEncoder {
     
     /// 从文件中解档
     ///
-    /// - Returns: 接档后的Model
-    class func decodedFromFile() -> ArchiverModel {
+    /// - Returns: 解档后的Model
+    class func decodedFromFile() throws -> ArchiverModel {
         var modelFile = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory,
                                                             FileManager.SearchPathDomainMask.userDomainMask,
                                                             true)[0]
@@ -41,13 +41,16 @@ class ArchiverModel: JXAutoEncoder {
         if FileManager.default.fileExists(atPath: modelFile) {
             if let model = NSKeyedUnarchiver.unarchiveObject(withFile: modelFile) as? ArchiverModel {
                 return model
+            }else{
+                throw NSError(domain: "Unarchive fail", code: 100, userInfo: nil)
             }
+        }else{
+            throw NSError(domain: "File doesn't exists", code: 101, userInfo: nil)
         }
-        return ArchiverModel()
     }
     
     /// 删除归档文件
-    class func removeFile() {
+    class func removeFile() throws {
         var modelFile = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory,
                                                             FileManager.SearchPathDomainMask.userDomainMask,
                                                             true)[0]
@@ -57,8 +60,10 @@ class ArchiverModel: JXAutoEncoder {
             do {
                 try FileManager.default.removeItem(at: URL(fileURLWithPath: modelFile))
             } catch {
-                print(error)
+                throw NSError(domain: "Remove file fail", code: 101, userInfo: nil)
             }
+        }else{
+            throw NSError(domain: "File doesn't exists", code: 101, userInfo: nil)
         }
     }
 }

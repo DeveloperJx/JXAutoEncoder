@@ -2,7 +2,7 @@
 //  JXAutoEncoder.swift
 //  JXAutoEncoder
 //
-//  Created by gxcb on 2017/2/9.
+//  Created by jx on 2017/2/9.
 //  Copyright © 2017年 jx. All rights reserved.
 //
 
