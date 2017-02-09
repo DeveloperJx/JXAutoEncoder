@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'JXAutoEncoder'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.license = 'MIT'
   s.summary = 'Encode model by Swift reflect'
   s.homepage = 'https://github.com/DeveloperJx/JXAutoEncoder'

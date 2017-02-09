@@ -8,11 +8,11 @@
 
 import UIKit
 
-class JXAutoEncoder: NSObject, NSCoding {
+open class JXAutoEncoder: NSObject, NSCoding {
     
     // MARK:- 处理需要归档的字段
     
-    func encode(with aCoder:NSCoder) {
+    public func encode(with aCoder:NSCoder) {
         let mirror = Mirror(reflecting: self)
         
         for case let (label?, value) in mirror.children {
@@ -22,7 +22,7 @@ class JXAutoEncoder: NSObject, NSCoding {
     
     // MARK:- 处理需要解档的字段
     
-    required init(coder aDecoder:NSCoder) {
+    required public init(coder aDecoder:NSCoder) {
         super.init()
         let mirror = Mirror(reflecting: self)
         
