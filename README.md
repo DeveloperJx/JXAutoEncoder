@@ -54,24 +54,6 @@ class ArchiverModel: NSObject, NSCoding {
         }
     }
     
-    /// 删除归档文件
-    class func removeFile() throws {
-        var modelFile = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory,
-                                                            FileManager.SearchPathDomainMask.userDomainMask,
-                                                            true)[0]
-        modelFile += "/model.data"
-        
-        if FileManager.default.fileExists(atPath: modelFile) {
-            do {
-                try FileManager.default.removeItem(at: URL(fileURLWithPath: modelFile))
-            } catch {
-                throw NSError(domain: "Remove file fail", code: 101, userInfo: nil)
-            }
-        }else{
-            throw NSError(domain: "File doesn't exists", code: 101, userInfo: nil)
-        }
-    }
-    
     required init?(coder aDecoder: NSCoder) {
         super.init()
         if let boolValue = aDecoder.decodeObject(forKey: "bool") as? Bool {
