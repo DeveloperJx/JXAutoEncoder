@@ -87,10 +87,10 @@ class ArchiverModel: NSObject, NSCoding {
         aCoder.encode(int, forKey: "int")
         aCoder.encode(double, forKey: "double")
         aCoder.encode(string, forKey: "string")
-        aCoder.encode(string, forKey: "array")
-        aCoder.encode(string, forKey: "dictionary")
-        aCoder.encode(string, forKey: "data")
-        aCoder.encode(string, forKey: "date")
+        aCoder.encode(array, forKey: "array")
+        aCoder.encode(dictionary, forKey: "dictionary")
+        aCoder.encode(data, forKey: "data")
+        aCoder.encode(date, forKey: "date")
     }
 }
 ```
