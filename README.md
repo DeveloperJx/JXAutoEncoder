@@ -99,7 +99,7 @@ class ArchiverModel: NSObject, NSCoding {
 
 ```Swift
 	
-	import JXAutoEncoder
+import JXAutoEncoder
 
 class ArchiverModel: JXAutoEncoder {
     
@@ -139,7 +139,7 @@ class ArchiverModel: JXAutoEncoder {
 
 ```Swift
 	
-	import JXAutoEncoder
+import JXAutoEncoder
 
 class ArchiverModel: JXAutoEncoder {
     
