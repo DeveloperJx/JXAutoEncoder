@@ -101,7 +101,7 @@ class ArchiverModel: NSObject, NSCoding {
 	
 	import JXAutoEncoder
 
-	class ArchiverModel: JXAutoEncoder {
+class ArchiverModel: JXAutoEncoder {
     
     /// 归档到文件
     func archiveToFile() {
@@ -131,6 +131,7 @@ class ArchiverModel: NSObject, NSCoding {
             throw NSError(domain: "File doesn't exists", code: 101, userInfo: nil)
         }
     }
+}
 ```
 
 ## 使用方法
@@ -140,7 +141,7 @@ class ArchiverModel: NSObject, NSCoding {
 	
 	import JXAutoEncoder
 
-	class ArchiverModel: JXAutoEncoder {
+class ArchiverModel: JXAutoEncoder {
     
     /// 归档到文件
     func archiveToFile() {
@@ -170,6 +171,7 @@ class ArchiverModel: NSObject, NSCoding {
             throw NSError(domain: "File doesn't exists", code: 101, userInfo: nil)
         }
     }
+}
 ```
 
 使用中，请根据需要，自行定义上述代码中的路径部分：
