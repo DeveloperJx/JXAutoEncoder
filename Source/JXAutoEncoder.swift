@@ -6,9 +6,9 @@
 //  Copyright © 2017年 jx. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-open class JXAutoEncoder: NSObject, NSCoding {
+public class JXAutoEncoder: NSObject, NSCoding {
     
     // MARK:- 处理需要归档的字段
     
@@ -34,7 +34,7 @@ open class JXAutoEncoder: NSObject, NSCoding {
         }
     }
     
-    override init() {
+    override public init() {
         super.init()
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C004E961EC99A2E00FF72DB /* JXAutoEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C004E951EC99A2E00FF72DB /* JXAutoEncoder.swift */; };
 		6C2D8E821E4C19540025BDC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2D8E811E4C19540025BDC3 /* AppDelegate.swift */; };
 		6C2D8E841E4C19540025BDC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2D8E831E4C19540025BDC3 /* ViewController.swift */; };
 		6C2D8E871E4C19540025BDC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D8E851E4C19540025BDC3 /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		6C2D8E8C1E4C19540025BDC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2D8E8A1E4C19540025BDC3 /* LaunchScreen.storyboard */; };
 		6C2D8E971E4C19540025BDC3 /* JXAutoEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2D8E961E4C19540025BDC3 /* JXAutoEncoderTests.swift */; };
 		6C2D8EA21E4C19540025BDC3 /* JXAutoEncoderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2D8EA11E4C19540025BDC3 /* JXAutoEncoderUITests.swift */; };
-		6C2D8EB01E4C1A6C0025BDC3 /* JXAutoEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2D8EAF1E4C1A6C0025BDC3 /* JXAutoEncoder.swift */; };
 		6C2D8EB31E4C1AF90025BDC3 /* ArchiverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2D8EB21E4C1AF90025BDC3 /* ArchiverModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C004E951EC99A2E00FF72DB /* JXAutoEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JXAutoEncoder.swift; path = ../Source/JXAutoEncoder.swift; sourceTree = "<group>"; };
 		6C2D8E7E1E4C19540025BDC3 /* JXAutoEncoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXAutoEncoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2D8E811E4C19540025BDC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C2D8E831E4C19540025BDC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		6C2D8E9D1E4C19540025BDC3 /* JXAutoEncoderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXAutoEncoderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2D8EA11E4C19540025BDC3 /* JXAutoEncoderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXAutoEncoderUITests.swift; sourceTree = "<group>"; };
 		6C2D8EA31E4C19540025BDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C2D8EAF1E4C1A6C0025BDC3 /* JXAutoEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXAutoEncoder.swift; sourceTree = "<group>"; };
 		6C2D8EB21E4C1AF90025BDC3 /* ArchiverModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiverModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +81,7 @@
 		6C2D8E751E4C19540025BDC3 = {
 			isa = PBXGroup;
 			children = (
-				6C2D8EAF1E4C1A6C0025BDC3 /* JXAutoEncoder.swift */,
+				6C004E951EC99A2E00FF72DB /* JXAutoEncoder.swift */,
 				6C2D8E801E4C19540025BDC3 /* JXAutoEncoder */,
 				6C2D8E951E4C19540025BDC3 /* JXAutoEncoderTests */,
 				6C2D8EA01E4C19540025BDC3 /* JXAutoEncoderUITests */,
@@ -276,8 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C2D8EB01E4C1A6C0025BDC3 /* JXAutoEncoder.swift in Sources */,
 				6C2D8E841E4C19540025BDC3 /* ViewController.swift in Sources */,
+				6C004E961EC99A2E00FF72DB /* JXAutoEncoder.swift in Sources */,
 				6C2D8E821E4C19540025BDC3 /* AppDelegate.swift in Sources */,
 				6C2D8EB31E4C1AF90025BDC3 /* ArchiverModel.swift in Sources */,
 			);
@@ -528,6 +528,7 @@
 				6C2D8EA81E4C19540025BDC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C2D8EA91E4C19540025BDC3 /* Build configuration list for PBXNativeTarget "JXAutoEncoderTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +537,7 @@
 				6C2D8EAB1E4C19540025BDC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C2D8EAC1E4C19540025BDC3 /* Build configuration list for PBXNativeTarget "JXAutoEncoderUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +546,7 @@
 				6C2D8EAE1E4C19540025BDC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
