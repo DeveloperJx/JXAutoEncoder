@@ -8,7 +8,7 @@ Swift 3.0 自动编解码--致敬MJ大神的MJExtension
 **JXAutoEncoder** 是一个通过Swift Reflect实现的，自动归解档的类，通过继承该类，可简化Swift下归档、解档的代码。功效类似于MJExtension的一句宏实现自动归解档。只是Swift不支持宏定义，又没有Runtime，一句一句写编码、解码简直写到吐血，才催生出了这个**JXAutoEncoder**
 
 
-##效果
+## 效果
 
 使用前
 
@@ -190,7 +190,7 @@ var modelFile = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirect
 pod 'JXAutoEncoder' 
 ```
 
-您可以使用`pod search JXAutoEncoder`查看所有版本，在`pod search`之前请先执行`pod setup`。最新版本为1.0.1。
+您可以使用`pod search JXAutoEncoder`查看所有版本，在`pod search`之前请先执行`pod setup`。最新版本为1.0.2。
 
 ## 其他
 本库没有导入任何其他的第三方内容，可以放心使用。在使用前，您可以查看[示例程序](https://github.com/DeveloperJx/JXAutoEncoder/tree/master/Demo)
