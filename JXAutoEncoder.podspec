@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'JXAutoEncoder'
-  s.version = '1.0.2'
+  s.version = '1.0.3'
   s.license = 'MIT'
   s.summary = 'Encode model by Swift reflect'
   s.homepage = 'https://github.com/DeveloperJx/JXAutoEncoder'
@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/*.swift'
   s.requires_arc = true
-  s.frameworks = "UIKit"
+  s.frameworks = "Foundation"
 end
