@@ -12,7 +12,7 @@ class ArchiverModel: JXAutoEncoder {
     
     var bool = true
     var int = 1
-    var double = M_PI
+    var double = CGFloat.pi
     var string = ""
     var array = ["123", "456"]
     var dictionary = ["abc": "cba"]

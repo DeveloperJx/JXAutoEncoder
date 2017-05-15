@@ -66,7 +66,7 @@ extension ViewController {
         print("Array变量      : \(model.array)")
         print("Dictionary变量 : \(model.dictionary)")
         if let data = model.data {
-            print("Data变量       : \(String(data: data, encoding: String.Encoding.utf8))")
+            print("Data变量       : \(String(describing: String(data: data, encoding: String.Encoding.utf8)))")
         }else{
             print("Data变量       : 为空")
         }
