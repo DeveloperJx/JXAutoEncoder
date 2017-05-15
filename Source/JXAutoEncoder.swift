@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class JXAutoEncoder: NSObject, NSCoding {
+open class JXAutoEncoder: NSObject, NSCoding {
     
     // MARK:- 处理需要归档的字段
     

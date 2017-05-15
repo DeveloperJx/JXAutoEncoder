@@ -190,7 +190,7 @@ var modelFile = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirect
 pod 'JXAutoEncoder' 
 ```
 
-您可以使用`pod search JXAutoEncoder`查看所有版本，在`pod search`之前请先执行`pod setup`。最新版本为1.0.3。
+您可以使用`pod search JXAutoEncoder`查看所有版本，在`pod search`之前请先执行`pod setup`。最新版本为1.0.4。
 
 ## 其他
 本库没有导入任何其他的第三方内容，可以放心使用。在使用前，您可以查看[示例程序](https://github.com/DeveloperJx/JXAutoEncoder/tree/master/Demo)
