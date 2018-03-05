@@ -1,4 +1,4 @@
-## JXAutoEncoder is no longer supported. Please use an alternative if you need updates for newer iOS 10 and 11 APIs!
+## 由于swift 4.0提供了Codable协议，请使用Codable协议来实现相关逻辑，JXAutoEncoder在swift 4.0推出之后已停止维护，感谢您的支持！再会！
 # JXAutoEncoder
 Swift 3.0 自动编解码--致敬MJ大神的MJExtension
 
