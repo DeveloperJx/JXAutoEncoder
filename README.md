@@ -1,3 +1,4 @@
+## JXAutoEncoder is no longer supported. Please use an alternative if you need updates for newer iOS 10 and 11 APIs!
 # JXAutoEncoder
 Swift 3.0 自动编解码--致敬MJ大神的MJExtension
 
